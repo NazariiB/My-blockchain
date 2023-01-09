@@ -1,0 +1,28 @@
+{
+  "name": "myblockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "n1": "node ./dev/api/networkNode.js 8008 http://localhost:8008",
+    "n2": "node ./dev/api/networkNode.js 8007 http://localhost:8007",
+    "n3": "node ./dev/api/networkNode.js 8006 http://localhost:8006",
+    "n4": "node ./dev/api/networkNode.js 8005 http://localhost:8005",
+    "n5": "node ./dev/api/networkNode.js 8004 http://localhost:8004",
+    "start":"node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sha256": "^0.2.0",
+    "uuid": "^9.0.0"
+  }
+}
